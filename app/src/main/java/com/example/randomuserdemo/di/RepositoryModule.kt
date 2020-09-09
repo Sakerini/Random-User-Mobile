@@ -5,7 +5,7 @@ import com.example.randomuserdemo.presentation.viewmodel.RandomUserGenerationVie
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
-val randomUserModule = module {
+val repositoryModule = module {
     single { RandomUserRepository(get()) }
 }
 
