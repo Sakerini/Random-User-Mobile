@@ -1,6 +1,6 @@
 package com.example.randomuserdemo.data.utils
 
-class Resource<out T>(
+data class Resource<out T> (
     val status: Status,
     val data: T?,
     val message: String?) {

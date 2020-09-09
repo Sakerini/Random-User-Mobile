@@ -9,7 +9,8 @@ class NetworkService constructor(private val context: Context) {
 
     fun isNetworkConnected(): Boolean {
         var result = false;
-        var connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        var connectivityManager =
+            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             val networkCapabilities = connectivityManager.activeNetwork ?: return false
             val activeNetwork =
@@ -36,6 +37,4 @@ class NetworkService constructor(private val context: Context) {
 
         return result;
     }
-
-
 }
