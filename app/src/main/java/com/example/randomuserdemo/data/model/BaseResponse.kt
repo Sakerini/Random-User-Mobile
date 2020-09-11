@@ -1,6 +1,10 @@
 package com.example.randomuserdemo.data.model
 
+import com.google.gson.annotations.SerializedName
+
 class BaseResponse<T>(
-    val data: T?,
-    val error: String?
+    @SerializedName("results")
+    val data: T? = null,
+    @SerializedName("error")
+    val error: String? = null
 )

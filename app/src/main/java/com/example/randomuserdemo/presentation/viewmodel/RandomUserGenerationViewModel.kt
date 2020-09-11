@@ -19,6 +19,18 @@ class RandomUserGenerationViewModel(
     private val _users = MutableLiveData<Resource<List<User>>>()
     val users: LiveData<Resource<List<User>>> get() = _users
 
+    fun testApi() {
+        var testList : List<User>
+        var error: String
+        viewModelScope.launch {
+            randomUserRepository.getRandomUsers(QUANTITY).fold({
+                error = it.toString();
+            }, {
+                testList = it
+        })
+        }
+    }
+
     private fun loadUsers() {
         viewModelScope.launch {
             _users.postValue(Resource.loading(null))

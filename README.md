@@ -4,4 +4,3 @@ Written for training purposes android technologies.
 Technologies Retrofit 2, Koin, coroutines, MVVM , Gson
 
 WORK IN PROGRESS
-soon

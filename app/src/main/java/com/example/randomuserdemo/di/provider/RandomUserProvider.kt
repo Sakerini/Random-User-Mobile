@@ -1,6 +1,7 @@
 package com.example.randomuserdemo.di.provider
 
 import android.content.Context
+import com.example.randomuserdemo.BuildConfig
 import com.example.randomuserdemo.data.api.IRandomUserService
 import com.example.randomuserdemo.data.api.RandomUserApi
 import com.example.randomuserdemo.presentation.service.NetworkService
@@ -15,8 +16,8 @@ class RandomUserProvider {
 
         fun provideNetworkService(context: Context) = NetworkService(context)
 
-        fun provideRetrofit(okHttpClient: OkHttpClient, BASE_URL: String): Retrofit {
-            return Retrofit.Builder().baseUrl(BASE_URL).client(okHttpClient)
+        fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
+            return Retrofit.Builder().baseUrl(BuildConfig.BASE_URL).client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create()).build()
         }
 
