@@ -1,6 +1,7 @@
-package com.example.randomuserdemo.data.api
+package com.example.randomuserdemo.data.service
 
 import arrow.core.Either
+import com.example.randomuserdemo.data.api.RandomUserApi
 import com.example.randomuserdemo.data.model.User
 import java.io.IOException
 
@@ -15,10 +16,10 @@ class RandomUserService(private val apiService: RandomUserApi) : IRandomUserServ
             if (baseResponse.error != null) {
                 return Either.left(Error(baseResponse.error))
             }
-            if (baseResponse.data == null) {
+            if (baseResponse.results == null) {
                 return Either.left(Error("NullData Error"))
             }
-            return Either.right(baseResponse.data)
+            return Either.right(baseResponse.results)
         } catch (exception: IOException) {
             return Either.left(Error("Unknown message"))
         }
