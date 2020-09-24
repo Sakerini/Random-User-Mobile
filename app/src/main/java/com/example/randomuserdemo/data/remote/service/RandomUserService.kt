@@ -1,8 +1,8 @@
-package com.example.randomuserdemo.data.service
+package com.example.randomuserdemo.data.remote.service
 
 import arrow.core.Either
-import com.example.randomuserdemo.data.api.RandomUserApi
-import com.example.randomuserdemo.data.model.User
+import com.example.randomuserdemo.data.remote.api.RandomUserApi
+import com.example.randomuserdemo.data.remote.model.User
 import java.io.IOException
 
 class RandomUserService(private val apiService: RandomUserApi) : IRandomUserService {

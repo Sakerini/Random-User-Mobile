@@ -1,7 +1,7 @@
-package com.example.randomuserdemo.data.api
+package com.example.randomuserdemo.data.remote.api
 
-import com.example.randomuserdemo.data.model.BaseResponse
-import com.example.randomuserdemo.data.model.User
+import com.example.randomuserdemo.data.remote.model.BaseResponse
+import com.example.randomuserdemo.data.remote.model.User
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

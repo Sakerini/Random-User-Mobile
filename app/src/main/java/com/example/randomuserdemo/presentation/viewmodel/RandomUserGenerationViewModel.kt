@@ -2,7 +2,7 @@ package com.example.randomuserdemo.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.randomuserdemo.data.model.User
+import com.example.randomuserdemo.data.remote.model.User
 import com.example.randomuserdemo.domen.repository.RandomUserRepository
 import kotlinx.coroutines.launch
 

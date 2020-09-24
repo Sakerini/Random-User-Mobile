@@ -1,7 +1,7 @@
 package com.example.randomuserdemo.di
 
 
-import com.example.randomuserdemo.di.provider.RandomUserProvider
+import com.example.randomuserdemo.data.remote.provider.RandomUserProvider
 import org.koin.dsl.module
 
 val networkModule = module {

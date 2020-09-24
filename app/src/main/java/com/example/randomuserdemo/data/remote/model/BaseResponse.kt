@@ -1,4 +1,4 @@
-package com.example.randomuserdemo.data.model
+package com.example.randomuserdemo.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 

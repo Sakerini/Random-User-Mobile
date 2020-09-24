@@ -1,8 +1,8 @@
-package com.example.randomuserdemo.di.provider
+package com.example.randomuserdemo.data.remote.provider
 
 import com.example.randomuserdemo.BuildConfig
-import com.example.randomuserdemo.data.service.IRandomUserService
-import com.example.randomuserdemo.data.api.RandomUserApi
+import com.example.randomuserdemo.data.remote.service.IRandomUserService
+import com.example.randomuserdemo.data.remote.api.RandomUserApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

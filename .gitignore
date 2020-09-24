@@ -85,5 +85,7 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 
+local.properties
+
 # Android Profiling
 *.hprof
